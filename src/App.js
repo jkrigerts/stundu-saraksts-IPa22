@@ -1,15 +1,27 @@
 import Diena from "./Diena";
-
 function App() {
+  const tresdienasStundas = [
+    "Datortīkli",
+    "Datortīkli",
+    "Sistēmu prog",
+    "Sistēmu prog"
+  ];
+  const ceturdienasStundas = [
+    "Sistēmu prog",
+    "Matemātika",
+    "Latviešu valoda",
+    "Vēl viena latviešu valoda + kultūra wtf lol"
+  ];
   return (
     <>
       <h1>Hi mom</h1>
-      <Diena nosaukums="pirmdiena" />
-      <Diena nosaukums="otrdiena" />
-      <Diena nosaukums="trešdiena" />
-      <Diena nosaukums="ceturtdiena" />
+      <Diena nosaukums="trešdiena" stundas={tresdienasStundas}/>
+      <Diena nosaukums="ceturtdiena" stundas={ceturdienasStundas}/>
     </>
   );
 }
 
 export default App;
+
+
+// Pieliec trešdienai visas pārstundas
