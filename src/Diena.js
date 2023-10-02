@@ -1,14 +1,16 @@
 import Stunda from "./Stunda";
 
 function Diena(props) {
+  
+  const stunduSarakstsJSX = props.stundas.map((stunda) => {
+    return <Stunda name={stunda}/>
+  })
+
   return (
     <>
       <p>Šodien ir {props.nosaukums}</p>
       <ol>
-        <Stunda name={props.stundas[0]}/>
-        <Stunda name={props.stundas[1]}/>
-        <Stunda name={props.stundas[2]}/>
-        <Stunda name={props.stundas[3]}/>
+        {stunduSarakstsJSX}
       </ol>
     </>
   )
@@ -27,3 +29,12 @@ export default Diena;
 // Vajadzīgas arī pirmdienas, otrdienas
 //stundas, bet jaunu komponeti netaisīsim.
 // Ko darīt?
+
+
+
+// .map() - iet cauri visiem masiva
+// elementiem, bet arī atgriež
+// to, ko prasa
+// .forEach() - iet cauri visiem
+// masiva elementiem, bet neko
+// neatgriež
