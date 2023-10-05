@@ -12,6 +12,7 @@ function App() {
     "Latviešu valoda",
     "Vēl viena latviešu valoda + kultūra wtf lol"
   ];
+  console.log("Hi mom")
   return (
     <>
       <h1>Hi mom</h1>
