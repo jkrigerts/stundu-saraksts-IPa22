@@ -12,6 +12,20 @@ function App() {
     "Latviešu valoda",
     "Vēl viena latviešu valoda + kultūra wtf lol"
   ];
+  //kaut kādā veidā varbūt mapīti izmantot
+  // kaiut kādu const map
+  // Kas ir katrai dienai? Stundas, Dienas Nosaukums
+  const visuDienuStunduSaraksts = [
+   {
+    diena: "Trešdiena",
+    stundas: [
+      "Datortīkli",
+    "Datortīkli",
+    "Sistēmu prog",
+    "Sistēmu prog"
+    ]
+   }
+  ]
   return (
     <>
       <h1>Hi mom</h1>
