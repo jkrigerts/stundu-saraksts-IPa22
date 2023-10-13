@@ -1,4 +1,5 @@
 import Diena from "./Diena";
+import style from "./App.module.css";
 function App() {
   const tresdienasStundas = [
     "Datortīkli",
@@ -48,7 +49,7 @@ function App() {
   });
   return (
     <>
-      <h1>Hi mom</h1>
+      <h1 className={style.hello}>Hi mom</h1>
       {visaSarakstaJSX}
     </>
   );

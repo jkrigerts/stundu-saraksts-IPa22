@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./global.css";
 
 // 1. Iegūt elementu no index.html
 const elementsNoHTML = document.getElementById("root");
